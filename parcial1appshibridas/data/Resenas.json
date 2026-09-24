@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Marta G.",
+    "foto": "https://picsum.photos/seed/marta/200/200",
+    "descripcion": "Las porciones son enormes y el flan casero es de otro planeta. Volvemos seguro.",
+    "puntaje": 5
+  },
+  {
+    "nombre": "Julián P.",
+    "foto": "https://picsum.photos/seed/julian/200/200",
+    "descripcion": "La milanesa napolitana comparte bien entre dos. Un poco de espera un sábado a la noche.",
+    "puntaje": 4
+  },
+  {
+    "nombre": "Rosa y Alberto",
+    "foto": "https://picsum.photos/seed/rosa/200/200",
+    "descripcion": "Venimos hace años. Los sorrentinos siguen igual que siempre, y eso es un elogio.",
+    "puntaje": 5
+  },
+  {
+    "nombre": "Leandro M.",
+    "foto": "https://picsum.photos/seed/leandro/200/200",
+    "descripcion": "Rico todo, pero el vermú tardó bastante en llegar.",
+    "puntaje": 3
+  }
+]

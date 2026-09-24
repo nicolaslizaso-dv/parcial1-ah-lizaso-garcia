@@ -1,0 +1,20 @@
+{
+  "name": "bodegon-api",
+  "version": "1.0.0",
+  "description": "Parcial 1 - Aplicaciones Híbridas: carta de un bodegón con API REST",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "node main.js",
+    "seed": "node seed.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0"
+  }
+}
