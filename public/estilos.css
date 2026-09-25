@@ -1,0 +1,220 @@
+:root {
+    --pizarra: #22302a;
+    --vino: #7a1f1f;
+    --papel: #fbf8f1;
+    --tinta: #2b2622;
+}
+
+body {
+    background: var(--papel);
+    color: var(--tinta);
+}
+
+h1, h2, .marca, .indice__link, .item-carta__precio, .precio-grande {
+    font-family: "Bitter", Georgia, serif;
+}
+
+/* Encabezado tipo pizarrón y franja de mantel a cuadros */
+.encabezado {
+    background: var(--pizarra);
+}
+
+.encabezado .nav-link,
+.encabezado .marca {
+    color: #f3efe6;
+}
+
+.encabezado .nav-link:hover,
+.encabezado .nav-link:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.marca {
+    font-weight: 700;
+}
+
+.panel-link {
+    opacity: .7;
+}
+
+.mantel {
+    height: 14px;
+    background: repeating-conic-gradient(var(--vino) 0 25%, #fff 0 50%) 0 0 / 14px 14px;
+}
+
+.titulo {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--tinta);
+    padding-bottom: .5rem;
+}
+
+.bajada {
+    font-size: 1.15rem;
+    max-width: 60ch;
+}
+
+/* Portada: índice de la carta */
+.indice {
+    display: grid;
+    gap: .75rem;
+    max-width: 480px;
+}
+
+.indice__link {
+    display: block;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--tinta);
+    color: var(--tinta);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.indice__link:hover,
+.indice__link:focus {
+    background: var(--tinta);
+    color: var(--papel);
+}
+
+/* Renglones de la carta, con puntos entre el nombre y el precio */
+.item-carta {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #b9b0a3;
+}
+
+.item-carta__img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.item-carta__texto {
+    flex: 1;
+    max-width: 70ch;
+}
+
+.item-carta__cabecera {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.item-carta__nombre {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.item-carta__puntos {
+    flex: 1;
+    border-bottom: 2px dotted #8a8178;
+}
+
+.item-carta__precio,
+.precio-grande {
+    font-weight: 700;
+    color: var(--vino);
+}
+
+.precio-grande {
+    font-size: 2rem;
+}
+
+.item-carta__link {
+    color: var(--vino);
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-right: .35rem;
+    padding: .1rem .5rem;
+    border: 1px solid #8a8178;
+    border-radius: 1rem;
+    font-size: .85rem;
+}
+
+/* Panel */
+.miniatura {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.btn-vino {
+    background: var(--vino);
+    color: #fff;
+}
+
+.btn-vino:hover,
+.btn-vino:focus {
+    background: #5e1717;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .item-carta__img {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+/* Portada */
+.presentacion {
+    padding: 2.5rem 0 3rem;
+}
+
+.presentacion__texto {
+    font-size: 1.3rem;
+    max-width: 55ch;
+    margin-bottom: 1.5rem;
+}
+
+.bloque {
+    padding: 2rem 0;
+    border-top: 1px dashed #b9b0a3;
+}
+
+.bloque__titulo {
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Reseñas */
+.resenas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.resena {
+    padding: 1.25rem;
+    background: #fff;
+    border: 1px solid #ddd5c8;
+}
+
+.resena__autor {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: .75rem;
+}
+
+.resena__foto {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resena__nombre {
+    margin: 0;
+    font-weight: 700;
+}
+
+.resena__estrellas {
+    margin: 0;
+    color: var(--vino);
+    letter-spacing: 2px;
+}
